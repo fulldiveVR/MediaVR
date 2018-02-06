@@ -1,2 +1,2 @@
 # MediaVR
-Media apps from FulldiveVR
+Media apps by FulldiveVR
