@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="mediavr_loading">Loading…</string>
+  <string name="mediavr_empty">Empty</string>
+  <string name="mediavr_actionbar_sdcard">SD</string>
+  <string name="mediavr_actionbar_phone">Phone</string>
+  <string name="mediavr_actionbar_panoramic">Gallery</string>
+  <string name="mediavr_actionbar_spherical">Spherical</string>
+  <string name="mediavr_tutorial_activity_panel_title">HOW DO YOU\nNAVIGATE?</string>
+  <string name="mediavr_tutorial_activity_panel_text">Look down to find navigation buttons.</string>
+  <string name="mediavr_tutorial_camera_title">HOW TO\nTAKE A PICTURE?</string>
+  <string name="mediavr_tutorial_camera_text">Click once and wait for the snap sound.\nAutoclick is not supported for Lookout beta.</string>
+  <string name="mediavr_tutorial_photo_scroll_title">HOW TO\nSCROLL IMAGES?</string>
+  <string name="mediavr_tutorial_photo_scroll_text">Tilt your head sideways \nto scroll between images.</string>
+</resources>

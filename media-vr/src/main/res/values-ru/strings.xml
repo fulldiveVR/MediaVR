@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="mediavr_loading">Загрузка…</string>
+  <string name="mediavr_empty">Пусто</string>
+  <string name="mediavr_actionbar_sdcard">SD</string>
+  <string name="mediavr_actionbar_phone">Телефон</string>
+  <string name="mediavr_actionbar_panoramic">Галерея</string>
+  <string name="mediavr_actionbar_spherical">Сферическая</string>
+  <string name="mediavr_tutorial_activity_panel_title">ВЫБЕРИТЕ\nУПРАВЛЕНИЕ</string>
+  <string name="mediavr_tutorial_activity_panel_text">Посмотрите вниз, чтобы найти кнопки управления.</string>
+  <string name="mediavr_tutorial_camera_title">КАК\nСДЕЛАТЬ ФОТО?</string>
+  <string name="mediavr_tutorial_camera_text">Нажмите один раз и дождитесь звука затвора.\nАвтоклик недоступен в LookOut Beta.</string>
+  <string name="mediavr_tutorial_photo_scroll_title">КАК\nПРОКРУЧИВАТЬ ИЗОБРАЖЕНИЯ?</string>
+  <string name="mediavr_tutorial_photo_scroll_text">Наклоните голову вправо или влево,\nчтобы прокрутить изображения.</string>
+</resources>

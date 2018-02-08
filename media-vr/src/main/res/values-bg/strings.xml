@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="mediavr_loading">Търсене…</string>
+  <string name="mediavr_empty">Празно</string>
+  <string name="mediavr_actionbar_sdcard">SD</string>
+  <string name="mediavr_actionbar_phone">Телефон</string>
+  <string name="mediavr_actionbar_panoramic">Галерея</string>
+  <string name="mediavr_actionbar_spherical">Сферичен</string>
+  <string name="mediavr_tutorial_activity_panel_title">КАК ДА\nНАВИГИРАТЕ?</string>
+  <string name="mediavr_tutorial_camera_title">КАК ДА\nНАПРАВИТЕ СНИМКА?</string>
+  <string name="mediavr_tutorial_camera_text">Докоснете веднъж и изчакайте звука от камерата.\nAutoclick функцията не се поддържа за Lookout beta.</string>
+  <string name="mediavr_tutorial_photo_scroll_title">КАК ДА ПРЕГЛЕЖДАТЕ\nСНИМКИ?</string>
+  <string name="mediavr_tutorial_photo_scroll_text">Наведете настрани\nза превъртане между изображения.</string>
+</resources>

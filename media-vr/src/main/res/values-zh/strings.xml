@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="mediavr_loading">加载中…</string>
+  <string name="mediavr_empty">空白</string>
+  <string name="mediavr_actionbar_sdcard">SD</string>
+  <string name="mediavr_actionbar_phone">手机</string>
+  <string name="mediavr_actionbar_panoramic">相册</string>
+  <string name="mediavr_actionbar_spherical">球形</string>
+  <string name="mediavr_tutorial_activity_panel_title">导航方法</string>
+  <string name="mediavr_tutorial_activity_panel_text">向下看，找到导航按钮。</string>
+  <string name="mediavr_tutorial_camera_title">拍照方法</string>
+  <string name="mediavr_tutorial_camera_text">点击一次，等待弹指声。目前不支持Lookout测试版自动点击功能。</string>
+  <string name="mediavr_tutorial_photo_scroll_title">翻转图像方法</string>
+  <string name="mediavr_tutorial_photo_scroll_text">为了转动图像向左或向右倾斜头部</string>
+</resources>

@@ -1,0 +1,80 @@
+ext.versions = [
+        buildTools         : '27.0.0',
+        compileSdk         : 27,
+        minSdk             : 19,
+        targetSdk          : 27,
+
+        fulldiveCommon     : '5.0.0@aar',
+
+        kotlin             : '1.2.0',
+        gradle             : '3.0.0',
+        support            : '27.0.0',
+        multidex           : '1.0.1',
+
+        eventbus           : '2.4.0',
+        picasso            : '2.5.2',
+        jsoup              : '1.8.3',
+        gson               : '2.8.1',
+        jackson            : '2.9.2',
+        httpClient         : '1.22.0',
+        json               : '20140107',
+        protobuf           : '3.1.0',
+
+        espresso           : '2.2.2',
+        junit              : '4.12',
+        supportTest        : '1.0.1',
+        supportTestAnimator: '2.1.3',
+        kluent             : '1.14',
+        mockito            : '1.5.0',
+        robolectric        : '3.4.2',
+        androidNetworking  : '1.0.1',
+        billingClient      : '1.0',
+]
+
+ext.gradlePlugins = [
+        android: "com.android.tools.build:gradle:$versions.gradle",
+        kotlin : "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin",
+]
+
+ext.libraries = [
+        kotlinStdLib       : "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin",
+
+        fulldiveBaseVr         : "in.fulldive.common:basevr:$versions.fulldiveCommon",
+        fulldiveInfrastructure : "in.fulldive.common:infrastructure:$versions.fulldiveCommon",
+
+        supportAnnotations : "com.android.support:support-annotations:$versions.support",
+        supportAppCompat   : "com.android.support:support-compat:$versions.support",
+        supportDesign      : "com.android.support:design:$versions.support",
+        supportV4          : "com.android.support:support-v4:$versions.support",
+        supportV13         : "com.android.support:support-v13:$versions.support",
+        supportAppCompatV7 : "com.android.support:appcompat-v7:$versions.support",
+        supportRecyclerView: "com.android.support:recyclerview-v7:$versions.support",
+
+        billingClient      : "com.android.billingclient:billing:$versions.billingClient",
+        multidex           : "com.android.support:multidex:$versions.multidex",
+
+        eventbus          : "de.greenrobot:eventbus:$versions.eventbus",
+        youtube            : "com.google.apis:google-api-services-youtube:+",
+        exoplayer          : "com.google.android.exoplayer:exoplayer:$versions.exoplayer",
+        vlc                : "in.fulldive.common:libvlc:$versions.vlc",
+        picasso            : "com.squareup.picasso:picasso:$versions.picasso",
+        jsoup              : "org.jsoup:jsoup:$versions.jsoup",
+        gson               : "com.google.code.gson:gson:$versions.gson",
+        jackson            : "com.fasterxml.jackson.core:jackson-databind:$versions.jackson",
+        jacksonKotlin      : "com.fasterxml.jackson.module:jackson-module-kotlin:$versions.jackson",
+        httpClient         : "com.google.http-client:google-http-client:$versions.httpClient",
+        json               : "org.json:json:$versions.json",
+        protobuf           : "com.google.protobuf.nano:protobuf-javanano:$versions.protobuf",
+        androidNetworking  : "com.amitshekhar.android:android-networking:$versions.androidNetworking",
+
+        espressoCore       : "com.android.support.test.espresso:espresso-core:$versions.espresso",
+        espressoContrib    : "com.android.support.test.espresso:espresso-contrib:$versions.espresso",
+        junit              : "junit:junit:$versions.junit",
+        kotlinTestJunit    : "org.jetbrains.kotlin:kotlin-test-junit:$versions.kotlin",
+        supportTestRules   : "com.android.support.test:rules:$versions.supportTest",
+        supportTestRunner  : "com.android.support.test:runner:$versions.supportTest",
+        supportTestAnimator: "com.android.support.test.uiautomator:uiautomator-v18:$versions.supportTestAnimator",
+        kluent             : "org.amshove.kluent:kluent:$versions.kluent",
+        mockito            : "com.nhaarman:mockito-kotlin:$versions.mockito",
+        robolectric        : "org.robolectric:robolectric:$versions.robolectric",
+]

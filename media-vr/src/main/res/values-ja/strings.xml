@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="mediavr_loading">ローディング</string>
+  <string name="mediavr_empty">なし</string>
+  <string name="mediavr_actionbar_sdcard">SD</string>
+  <string name="mediavr_actionbar_phone">携帯</string>
+  <string name="mediavr_actionbar_panoramic">ギャラリー</string>
+  <string name="mediavr_actionbar_spherical">球面</string>
+  <string name="mediavr_tutorial_activity_panel_title">ナビゲートする方法</string>
+  <string name="mediavr_tutorial_camera_title">写真を撮る方法</string>
+  <string name="mediavr_tutorial_camera_text">一度クリックして、シャッター音を待ちます\nオートクリックは、「ルックアウト」のベータ版はサポートされていません。</string>
+  <string name="mediavr_tutorial_photo_scroll_title">画像をスクロールする方法</string>
+  <string name="mediavr_tutorial_photo_scroll_text">画像をスクロールするため\n頭を横に傾けます.</string>
+</resources>

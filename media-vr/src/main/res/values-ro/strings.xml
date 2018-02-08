@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="mediavr_loading">Se încarcă…</string>
+  <string name="mediavr_empty">Gol</string>
+  <string name="mediavr_actionbar_sdcard">SD</string>
+  <string name="mediavr_actionbar_phone">Telefon</string>
+  <string name="mediavr_actionbar_spherical">Sferic</string>
+  <string name="mediavr_tutorial_activity_panel_title">CUM SĂ\nNAVIGHEZI?</string>
+  <string name="mediavr_tutorial_camera_title">CUM\nREALIZAȚI O FOTOGRAFIE?</string>
+  <string name="mediavr_tutorial_camera_text">Click odată și așteptați sunetul de fotografie.\nNu există suport pentru auto-click în Lookout beta.</string>
+  <string name="mediavr_tutorial_photo_scroll_title">CUM\nDERULEZ IMAGINILE?</string>
+  <string name="mediavr_tutorial_photo_scroll_text">Aplecați capul în părți\npentru a derula imaginile.</string>
+</resources>

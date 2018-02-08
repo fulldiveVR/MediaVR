@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="mediavr_loading">Ładowanie…</string>
+  <string name="mediavr_empty">Pusty</string>
+  <string name="mediavr_actionbar_sdcard">SD</string>
+  <string name="mediavr_actionbar_phone">Telefon</string>
+  <string name="mediavr_actionbar_spherical">Sferyczny</string>
+  <string name="mediavr_tutorial_activity_panel_title">JAK\nNawigować?</string>
+  <string name="mediavr_tutorial_camera_title">JAK\nZROBIĆ ZDJĘCIE?</string>
+  <string name="mediavr_tutorial_camera_text">Kliknij raz i czekaj na dźwięk migawki.\nAutoklikanie nie jest obsługiwane dla wersji beta Lookout.</string>
+  <string name="mediavr_tutorial_photo_scroll_title">JAK PRZEWIJAĆ\nOBRAZY?</string>
+  <string name="mediavr_tutorial_photo_scroll_text">Przechylaj głowę na boki,\naby przechodzić pomiędzy obrazami.</string>
+</resources>

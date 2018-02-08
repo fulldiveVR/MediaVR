@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="mediavr_loading">Nalaganje…</string>
+  <string name="mediavr_empty">Prazno</string>
+  <string name="mediavr_tutorial_activity_panel_title">KAKO\nNAVIGIRATI?</string>
+  <string name="mediavr_tutorial_camera_title">KAKO\nPOSNETI FOTOGRAFIJO?</string>
+  <string name="mediavr_tutorial_camera_text">Kliknite enkrat in počakajte, da zaslišite zvok kamere.\nAvtomatski klik v beta verziji ni podprt.</string>
+  <string name="mediavr_tutorial_photo_scroll_title">KAKO\nSE POMIKATI PO FOTOGRAFIJAH?</string>
+  <string name="mediavr_tutorial_photo_scroll_text">Nagnite glavo, da se\npomikate med fotografijami.</string>
+</resources>

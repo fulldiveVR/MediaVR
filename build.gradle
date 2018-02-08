@@ -1,0 +1,58 @@
+apply from: 'dependencies.gradle'
+
+def getGitBranchName() {
+    def branch = ""
+    def proc = "git rev-parse --abbrev-ref HEAD".execute()
+    proc.in.eachLine { line -> branch = line }
+    proc.err.eachLine { line -> println line }
+    proc.waitFor()
+    println("Current branch name = $branch")
+    branch
+}
+
+def genVersionCode() {
+    return rootProject.ext.versionMajor * 100000 + rootProject.ext.versionMinor * 1000 + rootProject.ext.versionPatch
+}
+
+def genVersionName() {
+    return "${rootProject.ext.versionMajor}.${rootProject.ext.versionMinor}.${rootProject.ext.versionPatch}"
+}
+
+static def getPostfixByBranchName(branchName) {
+    return (branchName && (branchName.startsWith('release/') || branchName == 'master')) ? '' : '_dev'
+}
+
+buildscript {
+    apply from: 'dependencies.gradle'
+
+    repositories {
+        jcenter()
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath gradlePlugins.android
+        classpath gradlePlugins.kotlin
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        google()
+        maven { url "http://maven.fulldive.com/maven" }
+        mavenLocal()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    versionMajor = 5            // 0..inf
+    versionMinor = 0            // 0..99
+    versionPatch = 0           // 0..999
+
+    libraryPostfix = getPostfixByBranchName(getGitBranchName())
+}

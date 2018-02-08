@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="mediavr_loading">Cargando…</string>
+  <string name="mediavr_empty">Vacío</string>
+  <string name="mediavr_actionbar_sdcard">SD</string>
+  <string name="mediavr_actionbar_phone">Teléfono</string>
+  <string name="mediavr_actionbar_panoramic">Galería</string>
+  <string name="mediavr_actionbar_spherical">Esferico</string>
+  <string name="mediavr_tutorial_activity_panel_title">¿CÓMO\nNAVEGAR?</string>
+  <string name="mediavr_tutorial_activity_panel_text">Mire hacia abajo para encontrar los botones de navegación.</string>
+  <string name="mediavr_tutorial_camera_title">¿CÓMO TOMAR\nUNA FOTO?</string>
+  <string name="mediavr_tutorial_camera_text">Haga clic una vez y espere el chasquido.\nAutoclic no funciona para LookOut Beta.</string>
+  <string name="mediavr_tutorial_photo_scroll_title">¿COMO DESPLAZAR\nIMÁGENES?</string>
+  <string name="mediavr_tutorial_photo_scroll_text">Incline la cabeza a los lados\npara desplazar las imágenes.</string>
+</resources>

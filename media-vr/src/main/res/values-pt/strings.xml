@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="mediavr_loading">Carregando…</string>
+  <string name="mediavr_empty">Vazio</string>
+  <string name="mediavr_tutorial_activity_panel_title">COMO\nNAVEGAR?</string>
+  <string name="mediavr_tutorial_camera_title">COMO TIRAR\nUMA FOTO?</string>
+  <string name="mediavr_tutorial_camera_text">Clique uma vez e espere pelo som de foto.\nNão há suporte a autoclique no Lookout beta.</string>
+  <string name="mediavr_tutorial_photo_scroll_title">COMO PERCORRER\nAS IMAGENS?</string>
+  <string name="mediavr_tutorial_photo_scroll_text">Incline sua cabeça para os lados\npara passar de uma imagem para outra.</string>
+</resources>

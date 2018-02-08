@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="mediavr_loading">Betöltés…</string>
+  <string name="mediavr_empty">Üres</string>
+  <string name="mediavr_actionbar_sdcard">SD</string>
+  <string name="mediavr_actionbar_phone">Telefon</string>
+  <string name="mediavr_actionbar_spherical">Gömb</string>
+  <string name="mediavr_tutorial_activity_panel_title">HOGYAN\nNAVIGÁLJON?</string>
+  <string name="mediavr_tutorial_camera_title">HOGYAN KÉSZÍTSEN\nKÉPEKET?</string>
+  <string name="mediavr_tutorial_camera_text">Kattintson egyszer, várja meg a hangjelzést.\nAz Automatikus felvételt a LookOut Béta nem támogatja.</string>
+  <string name="mediavr_tutorial_photo_scroll_title">HOGYAN MOZGASSA\nA KÉPEKET?</string>
+  <string name="mediavr_tutorial_photo_scroll_text">Döntse fejét oldalra\na képek közti váltáshoz.</string>
+</resources>
