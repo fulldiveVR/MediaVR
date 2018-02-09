@@ -1,0 +1,10 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="startup_overlay">#CA1c2a3e</color>
+    <color name="startup_title">#ffffff</color>
+    <color name="startup_hint">#ffffffff</color>
+
+    <color name="signin_text">#ffffffff</color>
+    <color name="toolbar_background">#263853</color>
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+    <dimen name="signin_title">36sp</dimen>
+    <dimen name="signin_subtitle">20sp</dimen>
+    <dimen name="signin_facebook">16sp</dimen>
+    <dimen name="signin_hint">12sp</dimen>
+
+    <dimen name="startup_title">36sp</dimen>
+    <dimen name="startup_padding">20dp</dimen>
+    <dimen name="startup_hint">16sp</dimen>
+    <dimen name="startup_hint_top_margin">30dp</dimen>
+    <dimen name="startup_skip">16sp</dimen>
+</resources>

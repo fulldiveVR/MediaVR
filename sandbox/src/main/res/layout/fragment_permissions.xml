@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/startup_padding"
+        android:paddingRight="@dimen/startup_padding">
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:background="@android:color/transparent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_fulldive"
+            android:textColor="@color/signin_text"
+            android:textSize="@dimen/signin_title"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subtitle_fulldive"
+            android:textColor="@color/signin_text"
+            android:textSize="@dimen/signin_subtitle"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:background="@android:color/transparent" />
+
+        <TextView
+            android:id="@+id/request_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/signin_background"
+            android:gravity="center"
+            android:paddingBottom="@dimen/space_3"
+            android:paddingLeft="@dimen/space_6"
+            android:paddingRight="@dimen/space_6"
+            android:paddingTop="@dimen/space_3"
+            android:text="@string/permissions_positive"
+            android:textColor="@color/signin_text"
+            android:textSize="@dimen/signin_facebook" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_4"
+            android:gravity="center"
+            android:textColor="@color/signin_text"
+            android:textSize="@dimen/signin_hint" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+</ScrollView>

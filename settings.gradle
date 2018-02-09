@@ -1,1 +1,2 @@
 include ':media-vr'
+include ':sandbox'

@@ -1,0 +1,106 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+repositories {
+    mavenCentral()
+}
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'debugkey'
+            keyPassword 'debugkey'
+            storeFile file('debugkey.jks')
+            storePassword 'debugkey'
+        }
+    }
+    aaptOptions {
+        noCompress 'icudtl.dat', 'content_shell.pak', 'natives_blob.bin', 'snapshot_blob_32.bin'
+        ignoreAssetsPattern "!icudtl.dat:!content_shell.pak"
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    compileSdkVersion versions.compileSdk
+    buildToolsVersion versions.buildTools
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    lintOptions {
+        abortOnError false
+        disable 'MissingTranslation'
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude '.readme'
+        exclude 'lib/arm64-v8a/*'
+        exclude 'lib/x86/*'
+        exclude 'lib/armeabi-v7a/libcontent_shell_content_view.so'
+    }
+
+    flavorDimensions "default"
+
+    defaultConfig {
+        buildConfigField "boolean", "CHECK_SHELL", "false"
+        buildConfigField "String", "CHROMIUM_LIBRARY_URL", "\"http://static.fulldive.com/android-assets/chromium/chromium.1.0.0.zip\""
+        buildConfigField "String", "API_URL", "\"https://api-staging.fulldive.com/v2\""
+        buildConfigField "String", "SHARE_URL", "\"http://share.deployment.fulldive.com\""
+        applicationId "in.fulldive.sandbox"
+        minSdkVersion versions.minSdk
+        targetSdkVersion versions.targetSdk
+        versionCode 1
+        versionName "0.0.1"
+        multiDexEnabled true
+        testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.config
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), '../proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+        }
+    }
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+        main.java.srcDirs += 'src/sandbox1/kotlin'
+    }
+}
+configurations {
+    all {
+        exclude module: 'httpclient'
+        exclude module: 'commons-logging'
+    }
+}
+dependencies {
+    implementation project(':media-vr')
+
+    implementation libraries.supportV4
+    implementation libraries.supportV13
+    implementation libraries.supportAppCompatV7
+    implementation libraries.supportRecyclerView
+    implementation libraries.multidex
+    implementation libraries.protobuf
+    implementation libraries.androidNetworking
+
+    testImplementation libraries.kotlinStdLib
+    testImplementation libraries.kotlinTestJunit
+    testImplementation libraries.multidex
+    testImplementation libraries.junit
+    testImplementation libraries.json
+    testImplementation libraries.kluent
+    testImplementation libraries.mockito
+    testImplementation libraries.robolectric
+
+    androidTestImplementation libraries.junit
+    androidTestImplementation libraries.supportTestRunner
+    androidTestImplementation libraries.supportTestRules
+    androidTestImplementation libraries.supportTestAnimator
+}

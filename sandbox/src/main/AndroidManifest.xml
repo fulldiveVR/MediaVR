@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.fulldive.launcher">
+
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="false" />
+
+    <application
+        android:name=".MainApp"
+        android:allowBackup="false"
+        android:icon="@drawable/icon"
+        android:label="Apps Sandbox"
+        android:theme="@style/FullscreenTheme"
+        tools:replace="android:label">
+
+        <meta-data
+            android:name="com.baidu.speech.APP_ID"
+            android:value="9242145" />
+        <meta-data
+            android:name="com.baidu.speech.API_KEY"
+            android:value="UAnvO2cVENhU4IPWkTchbKNZ" />
+        <meta-data
+            android:name="com.baidu.speech.SECRET_KEY"
+            android:value="ee1549f3485eb62e4d5dc8b0c1d68702" />
+
+        <activity
+            android:name="com.fulldive.launcher.LauncherActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection|screenLayout"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="com.google.intent.category.CARDBOARD" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="content" />
+                <data android:pathPattern=".*vrs" />
+                <data android:host="*" />
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.fulldive.launcher.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.google.intent.category.CARDBOARD" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.fulldive.basevr.receivers.OnHeadphoneReceiver"
+            android:enabled="true">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

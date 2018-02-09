@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/startup_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:text="@string/startup_skip"
+        android:textColor="@color/startup_hint"
+        android:textSize="@dimen/startup_skip" />
+
+    <ProgressBar
+        android:id="@+id/progressLayout"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true" />
+
+    <ScrollView
+        android:id="@+id/signinLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/startup_skip"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/startup_padding"
+            android:paddingRight="@dimen/startup_padding">
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_fulldive"
+                android:textColor="@color/signin_text"
+                android:textSize="@dimen/signin_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subtitle_fulldive"
+                android:textColor="@color/signin_text"
+                android:textSize="@dimen/signin_subtitle"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:id="@+id/signin_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/signin_background"
+                android:drawableLeft="@drawable/icon_facebook"
+                android:drawablePadding="@dimen/space_3"
+                android:gravity="center"
+                android:padding="@dimen/space_3"
+                android:text="@string/signin_facebook"
+                android:textColor="@color/signin_text"
+                android:textSize="@dimen/signin_facebook" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_4"
+                android:gravity="center"
+                android:text="@string/signin_hint"
+                android:textColor="@color/signin_text"
+                android:textSize="@dimen/signin_hint" />
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
